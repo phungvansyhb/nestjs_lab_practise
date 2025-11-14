@@ -18,3 +18,8 @@
 6. bank.com nghĩ đây là request hợp lệ từ nạn nhân → Thực hiện hành động
 
 cách đề phòng bằng double crsf  : gọi api lấy token crsf => server set cookie vào browser. client set cookie vào request header (sẽ ko có nếu hacker gửi) => khi gọi request tiếp theo server so sánh 2 token để xác minh
+
+
+- phân biệt `Middleware`, `Guard` , `Interceptor` , `Pipe` , `Exception Filter` trong nestjs 
+
+![alt text](image.png)

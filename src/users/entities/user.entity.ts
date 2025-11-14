@@ -1,13 +1,13 @@
-import { AbstractEntity } from "src/abstract/abtractEntity";
+import { AbstractEntity } from "src/abstract/AbtractEntity";
 import { Column, Entity } from "typeorm";
 
 @Entity()
 export class User extends AbstractEntity {
 
-    @Column()
+    @Column({length : 124})
     firstName: string;
 
-    @Column()
+    @Column({length : 124})
     lastName: string;
 
     @Column({ unique: true })

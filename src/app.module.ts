@@ -22,6 +22,7 @@ import { DataSource } from 'typeorm';
       password: process.env.DB_PASSWORD || 'root',
       database: process.env.DB_DATABASE || 'test',
       autoLoadEntities: true,
+      logging: ['error', 'warn' , 'info'],
       synchronize: true, // Set to false in production!
     }),
     UsersModule,
